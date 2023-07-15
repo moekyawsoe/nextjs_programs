@@ -1,11 +1,9 @@
-import React from 'react';
-import Layout from './layout';
+import React, { useEffect } from 'react';
+import { useRouter } from 'next/router';
+import SplashPage from './splash';
   
 export default function Home() {
     return (
-        <Layout>
-            <h1>Welcome react app</h1>
-            <p>This is my first react app with layout components</p>
-        </Layout>
+        <SplashPage></SplashPage>
     )
 }
